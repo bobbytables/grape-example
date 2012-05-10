@@ -1,6 +1,9 @@
 require 'api'
 
 class ExampleAPI < Grape::API
+  default_format :json
+  format :json
+  
   resources :tweets do
     # /tweets
     get do
